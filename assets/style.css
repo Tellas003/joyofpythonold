@@ -1,0 +1,194 @@
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+
+} 
+
+/* Default background color */
+.navbar {
+    background-color: transparent; /* Set to your default background color */
+    transition: background-color 0.5s ease; /* Add a smooth transition effect */
+}
+
+/* Change background color on scroll */
+.navbar.scrolled {
+    background-color: #e6e4e2;
+     /* Set to the desired background color when scrolled */
+}
+
+/* Add custom CSS for hover effect on dropdowns */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-toggler{
+  border: none;
+  font-size: 1.25rem;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #e1e1e3;
+    font-weight: 700px;
+    font-weight: bold;
+    position: relative;
+    font-size: 18px;
+}
+.nav-link:hover, .nav-link.active{
+   
+    font-weight: bold;
+    color: antiquewhite;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    
+      border-radius:10px ;
+    
+     
+  }
+  
+    
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before,.nav-link:active::before{
+width: 100%;
+visibility: visible;
+}
+
+
+.navbar .is-fixed.color-fill .navbar:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .container1{
+height: 150vh;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+
+/*Coe image style is start*/
+#hero {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30;
+  width: 130%;
+  height: 80%;
+  background: linear-gradient(to right, rgba(224, 231, 235, 0.8), rgba(216, 223, 226, 0.6)), url(../tech.jpg) center top no-repeat;
+  z-index: 0;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) rotate(0deg);
+  box-sizing: border-box;
+}
+
+#hero::before{
+ content: "";
+  position: absolute;
+  left: 50%;
+  top: 30;
+  width: 130%;
+  height: 80%;
+  background: #3e4095;
+  opacity: 1;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) translateY(18px) rotate(1.5deg);
+}
+#hero .box1 {
+  position: absolute;
+  z-index: 1;
+ 
+  padding: 10px; 
+}
+.joy{
+
+  color: #6c2b6e;
+ 
+}
+.py{
+  color: red;
+}
+.image{
+  position: relative;
+  height: 250px;
+  border-radius: 50rem !important;
+ 
+  display: flex;
+  justify-content: center;
+
+}
+.joyof{
+  z-index: 1;
+}
+
+/*Coe image style is end*/
+
+/*card style start*/
+
+
+
+
+
+
+
