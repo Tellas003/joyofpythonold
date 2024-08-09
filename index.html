@@ -73,22 +73,9 @@
 
 
     <!--Navbar start-->
-    <script>
-      // Wait for the document to be fully loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        // Delay the display of the navbar by 4.1 seconds (4100 milliseconds)
-        var delayTime = window.innerWidth < 991 ? 120000 :  0; // Check if mobile view (width < 768px)
-        setTimeout(function () {
-          // Get the navbar element
-          var navbar = document.getElementById("navbar");
-          // Change the display style to grid
-          navbar.style.display = "grid";
-        }, delayTime);// 4.1 seconds delay
-      });
-    </script>
   
     <nav class="navbar navbar-expand-lg fixed-top"id="navbar" 
-    style ="justify-content: center;">
+    style ="justify-content: center; display: grid;">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.php"><img src="logo.png" height="200px" width="200px" alt="" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -195,8 +182,19 @@
       }
       .python{
         height: 100px;
+       
       }
   }
+
+  img {
+           width: auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+       
 </style>
   
  <section  id="hero">
@@ -250,37 +248,44 @@
                 transform: none !important; /* Remove any transformations */
             }
         }
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        a:hover{
+          color: #007bff;
+        }
 </style>
 
 <div class="container">
-  <h1 class="content">Contents</h1>
+  <h1 class="content">Contents</h1><br><br><br>
 
   <!-- Card Rows -->
   <div class="row" data-aos-delay="300" data-aos="fade-right">
       <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
               <div class="card-body">
-                  <h5 class="card-title">Instruction and Turtle</h5>
+                <a href="#"> <h5 class="card-title">Instruction and Turtle</h5></a><br>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Read More</a>
+                 
               </div>
           </div>
       </div>
       <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
               <div class="card-body">
-                  <h5 class="card-title">Variables, Operations and Types</h5>
+                <a href="#"><h5 class="card-title">Variables, Operations and Types</h5></a><br>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Read More</a>
+                
               </div>
           </div>
       </div>
       <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
               <div class="card-body">
-                  <h5 class="card-title">Alternatives</h5>
+                <a href="#"><h5 class="card-title">Alternatives</h5></a><br>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Read More</a>
+                
               </div>
           </div>
       </div>
@@ -293,27 +298,25 @@
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm">
                   <div class="card-body">
-                      <h5 class="card-title">For Loops</h5>
+                    <a href="#"><h5 class="card-title">For Loops</h5></a><br>
                       <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Read More</a>
+                     
                   </div>
               </div>
           </div>
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm">
                   <div class="card-body">
-                      <h5 class="card-title">While Loops</h5>
+                    <a href="#"><h5 class="card-title">While Loops</h5></a><br>
                       <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Read More</a>
                   </div>
               </div>
           </div>
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm">
                   <div class="card-body">
-                      <h5 class="card-title">Functions</h5>
+                    <a href="#"><h5 class="card-title">Functions</h5></a><br>
                       <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Read More</a>
                   </div>
               </div>
           </div>
@@ -326,27 +329,24 @@
     <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Lists</h5>
+              <a href="#"><h5 class="card-title">Lists</h5></a><br>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Read More</a>
             </div>
         </div>
     </div>
     <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Strings</h5>
+              <a href="#"><h5 class="card-title">Strings</h5></a><br>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Read More</a>
             </div>
         </div>
     </div>
     <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Interacting with Files</h5>
+              <a href="#"><h5 class="card-title">Interacting with Files</h5></a><br>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Read More</a>
             </div>
         </div>
     </div>
@@ -360,27 +360,24 @@
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">String Formatting</h5><br>
+          <a href="#"><h5 class="card-title">String Formatting</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Importing Modules</h5><br>
+           <a href="#"> <h5 class="card-title">Importing Modules</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Tuples, Dictionaries and Sets</h5><br>
+            <a href="#"><h5 class="card-title">Tuples, Dictionaries and Sets</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
@@ -389,27 +386,24 @@
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">More on Functions</h5><br>
+            <a href="#"><h5 class="card-title">More on Functions</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Comprehensive</h5><br>
+            <a href="#"><h5 class="card-title">Comprehensive</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Exceptions</h5><br>
+            <a href="#"><h5 class="card-title">Exceptions</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
@@ -418,27 +412,24 @@
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Decorators</h5><br>
+            <a href="#"><h5 class="card-title">Decorators</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Namespace and Classes</h5><br>
+            <a href="#"><h5 class="card-title">Namespace and Classes</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Magic Methods and Operator Overloading</h5>
+            <a href="#"><h5 class="card-title">Magic Methods and Operator Overloading</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div></div>
@@ -447,27 +438,24 @@
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Class Hierarchy</h5><br>
+            <a href="#"><h5 class="card-title">Class Hierarchy</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Matplotlib (Python Plotting Library)</h5><br>
+            <a href="#"><h5 class="card-title">Matplotlib (Python Plotting Library)</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Graphical User Interface with Python</h5><br>
+            <a href="#"><h5 class="card-title">Graphical User Interface with Python</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
@@ -477,27 +465,24 @@
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Database Connectivity with SQLITE</h5><br>
+            <a href=""><h5 class="card-title">Database Connectivity with SQLITE</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Django</h5><br>
+            <a href="#"><h5 class="card-title">Django</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">Networking with Python</h5><br>
+            <a href="#"><h5 class="card-title">Networking with Python</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
@@ -506,14 +491,145 @@
     <div class="col-md-4 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
-            <h5 class="card-title">The Match and the Walrus</h5><br>
+           <a href="#"><h5 class="card-title">The Match and the Walrus</h5></a><br>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
   </div>
 </div>
 </div>
+
+
+
+<!--Book Authors-->
+
+</style>
+</head>
+<body>
+<div class="container1">
+
+<div class="contents-wraper">
+
+<section class="header"><h1>Testimonial</h1></section>
+
+<section class="testRow">
+  
+  <div class="testItem active">
+    <img src="model-1.jpg">
+    <h3>Jane Doe</h3>
+    <h4>San Francisco, USA</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="testItem">
+    <img src="model-2.jpg">
+    <h3>Jane Doe</h3>
+    <h4>San Francisco, USA</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="testItem">
+    <img src="model-3.jpg">
+    <h3>Jane Doe</h3>
+    <h4>San Francisco, USA</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="testItem">
+    <img src="model-4.jpg">
+    <h3>Jane Doe</h3>
+    <h4>San Francisco, USA</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="testItem">
+    <img src="model-5.jpg">
+    <h3>Jane Doe</h3>
+    <h4>San Francisco, USA</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+</section>
+
+<section class="indicators">
+  <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+  <div class="dot" attr='1' onclick="switchTest(this)"></div>
+  <div class="dot" attr='2' onclick="switchTest(this)"></div>
+  <div class="dot" attr='3' onclick="switchTest(this)"></div>
+  <div class="dot" attr='4' onclick="switchTest(this)"></div>
+</section>
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+// Access the testimonials
+let testSlide = document.querySelectorAll('.testItem');
+// Access the indicators
+let dots = document.querySelectorAll('.dot');
+
+var counter = 0;
+
+// Add click event to the indicators
+function switchTest(currentTest){
+currentTest.classList.add('active');
+var testId = currentTest.getAttribute('attr');
+if(testId > counter){
+  testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+  counter = testId;
+  testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+}
+else if(testId == counter){return;}
+else{
+  testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+  counter = testId;
+  testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+}
+indicators();
+}
+
+// Add and remove active class from the indicators
+function indicators(){
+for(i = 0; i < dots.length; i++){
+  dots[i].className = dots[i].className.replace(' active', '');
+}
+dots[counter].className += ' active';
+}
+
+// Code for auto sliding
+function slideNext(){
+testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+if(counter >= testSlide.length - 1){
+  counter = 0;
+}
+else{
+  counter++;
+}
+testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+indicators();
+}
+function autoSliding(){
+deleteInterval = setInterval(timer, 2000);
+function timer(){
+  slideNext();
+  indicators();
+}
+}
+autoSliding();
+
+// Stop auto sliding when mouse is over the indicators
+const container = document.querySelector('.indicators');
+container.addEventListener('mouseover', pause);
+function pause(){
+clearInterval(deleteInterval);
+}
+
+// Resume sliding when mouse is out of the indicators
+container.addEventListener('mouseout', autoSliding);
+
+</script>
+
         <!-- Repeat for all 25 cards -->
  
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
