@@ -209,7 +209,16 @@ height: 150vh;
   position: relative;
   width: 100%;
   min-height: 450px;
-  background-color: #f5f5f5;
+  background-color: #1d8b73;
+  color: #fff;
+  margin-top: -40px;
+}
+
+@media (max-width: 700px){
+  .container1{
+    margin-top: -40px;
+  }
+  
 }
 .container1 .contents-wraper{
   width: 70%;
@@ -349,7 +358,6 @@ height: 150vh;
   }
 
 }
-
 
 
 
