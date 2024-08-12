@@ -230,8 +230,7 @@
        
 </style>
   
- 
-<section  id="hero">
+ <section  id="hero">
   <div class="container" style="z-index: 1;">
     <div class="row align-items-center" >
         <div class="col-md-6 text-center text-md-left" data-aos="fade-right" data-aos-delay="300">
@@ -253,12 +252,13 @@
 <style>
   .content {
     
-            font-size: 2em; /* Adjusted for better responsiveness */
-            color: #007bff;
-            font-weight: bold;
-            text-align: center;
-            margin: 1rem 0; /* Adjusted spacing */
-        }
+    position: relative;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  }
         .card {
             border: none;
             border-radius: 15px; /* Reduced radius for better mobile view */
@@ -276,7 +276,7 @@
         .container {
             padding: 1rem; /* Reduced padding for better mobile view */
         }
-        @media (max-width: 991px) {
+        @media (max-width: 976px) {
             [data-aos] {
                 opacity: 1 !important; /* Ensure elements are visible */
                 transform: none !important; /* Remove any transformations */
@@ -289,10 +289,14 @@
         a:hover{
           color: #007bff;
         }
-</style>
+      
 
-<div class="container">
-  <h1 class="content">Contents</h1><br><br><br>
+
+          </style>
+
+<div class="container" id="con">
+  <br><br><br>
+  <h1 class="content" style="color: #1d8b73;">Contents</h1><br><br><br>
 
   <!-- Card Rows -->
   <div class="row" data-aos-delay="300" data-aos="fade-right">
@@ -534,14 +538,16 @@
 </div>
 
 
+
 <!--Book Authors-->
 
 <div class="V_bk bN_fM w_br w_bs" id="main"><object type="image/svg+xml" aria-label="Animated ocean waves, with a paper boat floating" width="100%" height="125" data="assets/images/waves.svg"><img alt="Animated ocean waves, with a paper boat floating" src="waves.svg"></object></div>
 <div class="container1" > 
 
 <div class="contents-wraper">
+  <h1 class="content">Authors</h1><br>
 
-<section class="header"><h1>Authors</h1></section>
+<!--<section class="header"><h1>Authors</h1></section>-->
 
 <section class="testRow">
   
@@ -663,7 +669,7 @@ container.addEventListener('mouseout', autoSliding);
 
 </script>
 
-
+        <!-- Repeat for all 25 cards -->
  
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--Bootstrap Script Source-->
