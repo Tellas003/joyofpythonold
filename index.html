@@ -533,6 +533,134 @@
 </div>
 
 
+<!--Book Authors-->
+
+<div class="V_bk bN_fM w_br w_bs" id="main"><object type="image/svg+xml" aria-label="Animated ocean waves, with a paper boat floating" width="100%" height="125" data="assets/images/waves.svg"><img alt="Animated ocean waves, with a paper boat floating" src="waves.svg"></object></div>
+<div class="container1" > 
+
+<div class="contents-wraper">
+
+<section class="header"><h1>Authors</h1></section>
+
+<section class="testRow">
+  
+  <div class="testItem active">
+    <img src="assets/images/authour_1.jpg">
+    <h3>Fr Dr Thomas Schwarz SJ</h3>
+    <h4>USA</h4>
+    <p>Fr Dr Thomas Schwarz SJ holds two doctorates, in Mathematics from the Fern University, Germany (1984) and in Computer Science from the University of California (1994). He has more than 120 publications under his name, and his research interest is in Distributed Systems. He is currently an Associate Professor at Marqutee University, Milwaukee and Visiting Professor at Xavier Institute of Engineering, Mumbai.</p>
+  </div>
+
+  <div class="testItem">
+    <img src="assets/images/authour_2.jpg">
+    <h3>Dr Jaychand Upadhyay</h3>
+    <h4>Mumbai, INDIA</h4>
+    <p>Dr Jaychand Upadhyay is an Associate Professor and HOD of the Department of Information Technology at Xavier Institute of Engineering. He completed his PhD in Information Science from Sophio University. Tokyo. His research interests include GAIT recognition, Computer Vision, Machine Learning, and Deep Learning</p>
+  </div>
+
+  <div class="testItem">
+    <img src="assets/images/authour_4.jpg">
+    <h3>Prof. Suhas Lawand</h3>
+    <h4>Mumbai, INDIA</h4>
+    <p>Prof. Suhas Lawand is an Assistant Professor in the Department of Computer Science and Engineering at Xavier Institute of Engineering. He is pursuing his PhD in Information Technology from University of Mumbai. His research interests include Blockchain, Supply Chain Management, Cyber Security, and Machine Learning.
+    </p>
+  </div>
+
+  <div class="testItem">
+    <img src="assets/images/authour_3.jpg">
+    <h3>Fr Dr David K Roy SJ</h3>
+    <h4>Ahmedabad, Gujarat</h4>
+    <p>Fr Dr David K Roy SJ did his MA in Philosophy from Loyola College, Chennai, Master of Computer Applications (MCA) from St.Joseph's College, Trichy and PhD from Marqutee University, Milwaukee, WI, USA. Fr Dr Thomas Schwarz SJ was his PhD advisor. His research interests include NVRAM, Storage Systems and Machine Learning. He teaches Computer Science and Applications at St. Xavier's College, Ahmedabad, Gujarat.
+    </p>
+  </div>
+
+  <div class="testItem">
+    <img src="assets/images/authour_5.jpg">
+    <h3>Fr Dr John Rose Santiago SJ</h3>
+    <h4>Mumbai, INDIA</h4>
+    <p>Fr Dr Jhon Rose Santiago SJ did his Bsc and Msc in Physics from St. Xavier's College, Ahmedabad and Loyola College, Chennai respectively. He did his MS in Computer Engineering and PhD in Electrical Engineering from Santa Clara University, California. His research interest include Power Devices and Embedded Systems. He is the Director of Xavier Institute of Engineering.</p>
+  </div>
+
+</section>
+
+<section class="indicators">
+  <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+  <div class="dot" attr='1' onclick="switchTest(this)"></div>
+  <div class="dot" attr='2' onclick="switchTest(this)"></div>
+  <div class="dot" attr='3' onclick="switchTest(this)"></div>
+  <div class="dot" attr='4' onclick="switchTest(this)"></div>
+</section>
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+// Access the testimonials
+let testSlide = document.querySelectorAll('.testItem');
+// Access the indicators
+let dots = document.querySelectorAll('.dot');
+
+var counter = 0;
+
+// Add click event to the indicators
+function switchTest(currentTest){
+currentTest.classList.add('active');
+var testId = currentTest.getAttribute('attr');
+if(testId > counter){
+  testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+  counter = testId;
+  testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+}
+else if(testId == counter){return;}
+else{
+  testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+  counter = testId;
+  testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+}
+indicators();
+}
+
+// Add and remove active class from the indicators
+function indicators(){
+for(i = 0; i < dots.length; i++){
+  dots[i].className = dots[i].className.replace(' active', '');
+}
+dots[counter].className += ' active';
+}
+
+// Code for auto sliding
+function slideNext(){
+testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+if(counter >= testSlide.length - 1){
+  counter = 0;
+}
+else{
+  counter++;
+}
+testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+indicators();
+}
+function autoSliding(){
+deleteInterval = setInterval(timer, 2000);
+function timer(){
+  slideNext();
+  indicators();
+}
+}
+autoSliding();
+
+// Stop auto sliding when mouse is over the indicators
+const container = document.querySelector('.indicators');
+container.addEventListener('mouseover', pause);
+function pause(){
+clearInterval(deleteInterval);
+}
+
+// Resume sliding when mouse is out of the indicators
+container.addEventListener('mouseout', autoSliding);
+
+</script>
 
 
  
